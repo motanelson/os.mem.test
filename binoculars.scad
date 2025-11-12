@@ -106,20 +106,24 @@ union() {
 
 // ========== VISUALIZAÇÃO DAS LENTES ==========
 color("Yellow")
+
 // Lentes objetivas (frontais)
+/*
 for(x = [-distancia_entre_tubos/2, distancia_entre_tubos/2]) {
     translate([x, 0, distancia_anilhas - 1])
     color("Yellow", 0.5)
     cylinder(h = 1, r = raio_interno * 0.95, $fn = 60);
 }
+*/
 color("Yellow")
 // Lentes oculares (traseiras)
+/*
 for(x = [-distancia_entre_tubos/2, distancia_entre_tubos/2]) {
     translate([x, 0, comprimento_total - distancia_anilhas - espessura_anilha + 1])
     color("Yellow", 0.5)
     cylinder(h = 1, r = raio_interno * 0.95, $fn = 60);
 }
-
+*/
 // ========== INFORMAÇÕES TÉCNICAS ==========
 echo("=== ESPECIFICAÇÕES DOS BINÓCULOS ===");
 echo(str("Comprimento total: ", comprimento_total, "mm"));
